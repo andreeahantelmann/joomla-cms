@@ -2,42 +2,42 @@
 /**
 * @package Helix3 Framework
 * @author JoomShaper http://www.joomshaper.com
-* @copyright Copyright (c) 2010 - 2015 JoomShaper
+* @copyright Copyright (c) 2010 - 2017 JoomShaper
 * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
-*/  
+*/
 
 //no direct accees
 defined ('_JEXEC') or die ('resticted aceess');
 
 $rowSettings = array(
-	'type'=>'general', 
-	'title'=>'', 
+	'type'=>'general',
+	'title'=>'',
 	'attr'=>array(
 
 		'name' => array(
-			'type'		=> 'text', 
+			'type'		=> 'text',
 			'title'		=> JText::_('HELIX_SECTION_TITLE'),
 			'desc'		=> JText::_('HELIX_SECTION_TITLE_DESC'),
 			'std'		=> ''
 			),
 		'background_color' => array(
-			'type'		=> 'color', 
+			'type'		=> 'color',
 			'title'		=> JText::_('HELIX_SECTION_BACKGROUND_COLOR'),
 			'desc'		=> JText::_('HELIX_SECTION_BACKGROUND_COLOR_DESC')
 			),
 		'color' => array(
-			'type'		=> 'color', 
+			'type'		=> 'color',
 			'title'		=> JText::_('HELIX_SECTION_TEXT_COLOR'),
 			'desc'		=> JText::_('HELIX_SECTION_TEXT_COLOR_DESC')
 			),
 		'background_image' => array(
-			'type'		=> 'media', 
+			'type'		=> 'media',
 			'title'		=> JText::_('HELIX_SECTION_BACKGROUND_IMAGE'),
 			'desc'		=> JText::_('HELIX_SECTION_BACKGROUND_IMAGE_DESC'),
 			'std'		=> '',
 			),
 		'background_repeat'=>array(
-			'type'=>'select', 
+			'type'=>'select',
 			'title'=>JText::_('HELIX_BG_REPEAT'),
 			'desc'=>JText::_('HELIX_BG_REPEAT_DESC'),
 			'values'=>array(
@@ -50,7 +50,7 @@ $rowSettings = array(
 			'std'=>'no-repeat',
 			),
 		'background_size' => array(
-			'type'		=> 'select', 
+			'type'		=> 'select',
 			'title'=>JText::_('HELIX_BG_SIZE'),
 			'desc'=>JText::_('HELIX_BG_SIZE_DESC'),
 			'values'=>array(
@@ -61,7 +61,7 @@ $rowSettings = array(
 			'std'=>'cover',
 			),
 		'background_attachment'=>array(
-			'type'=>'select', 
+			'type'=>'select',
 			'title'=>JText::_('HELIX_BG_ATTACHMENT'),
 			'desc'=>JText::_('HELIX_BG_ATTACHMENT_DESC'),
 			'values'=>array(
@@ -72,7 +72,7 @@ $rowSettings = array(
 			'std'=>'fixed',
 			),
 		'background_position' => array(
-			'type'		=> 'select', 
+			'type'		=> 'select',
 			'title'=>JText::_('HELIX_BG_POSITION'),
 			'desc'=>JText::_('HELIX_BG_POSITION_DESC'),
 			'values'=>array(
@@ -89,53 +89,53 @@ $rowSettings = array(
 			'std'=>'0 0',
 			),
 		'link_color' => array(
-			'type'		=> 'color', 
+			'type'		=> 'color',
 			'title'		=> JText::_('HELIX_LINK_COLOR'),
 			'desc'		=> JText::_('HELIX_LINK_COLOR_DESC')
 			),
 		'link_hover_color' => array(
-			'type'		=> 'color', 
+			'type'		=> 'color',
 			'title'		=> JText::_('HELIX_LINK_HOVER_COLOR'),
 			'desc'		=> JText::_('HELIX_LINK_HOVER_COLOR_DESC')
 			),
 		'hidden_xs' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_MOBILE'),
 			'desc'		=> JText::_('HELIX_HIDDEN_MOBILE_DESC'),
 			'std'		=> '',
 			),
 		'hidden_sm' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_TABLET'),
 			'desc'		=> JText::_('HELIX_HIDDEN_TABLET_DESC'),
 			'std'		=> '',
 			),
 		'hidden_md' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_DESKTOP'),
 			'desc'		=> JText::_('HELIX_HIDDEN_DESKTOP_DESC'),
 			'std'		=> '',
 			),
 		'padding' => array(
-			'type'		=> 'text', 
+			'type'		=> 'text',
 			'title'		=> JText::_('HELIX_PADDING'),
 			'desc'		=> JText::_('HELIX_PADDING_DESC'),
 			'std'		=> ''
 			),
 		'margin' => array(
-			'type'		=> 'text', 
+			'type'		=> 'text',
 			'title'		=> JText::_('HELIX_MARGIN'),
 			'desc'		=> JText::_('HELIX_MARGIN_DESC'),
 			'std'		=> ''
 			),
 		'fluidrow' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_ROW_FULL_WIDTH'),
 			'desc'		=> JText::_('HELIX_ROW_FULL_WIDTH_DESC'),
 			'std'		=> '',
 			),
 		'custom_class' => array(
-			'type'		=> 'text', 
+			'type'		=> 'text',
 			'title'		=> JText::_('HELIX_CUSTOM_CLASS'),
 			'desc'		=> JText::_('HELIX_CUSTOM_CLASS_DESC'),
 			'std'		=> ''
@@ -144,55 +144,55 @@ $rowSettings = array(
 	);
 
 $columnSettings = array(
-	'type'=>'general', 
-	'title'=>'', 
+	'type'=>'general',
+	'title'=>'',
 	'attr'=>array(
 
 		'column_type' => array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_COMPONENT'),
 			'desc'		=> JText::_('HELIX_COMPONENT_DESC'),
 			'std'=>'',
 			),
 		'name' => array(
-			'type'		=> 'select', 
+			'type'		=> 'select',
 			'title'		=> JText::_('HELIX_MODULE_POSITION'),
 			'desc'		=> JText::_('HELIX_MODULE_POSITION_DESC'),
 			'values'	=> array(),
 			'std'=>'none',
-			),		
+			),
 		'hidden_xs' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_MOBILE'),
 			'desc'		=> JText::_('HELIX_HIDDEN_MOBILE_DESC'),
 			'std'		=> '',
 			),
 		'hidden_sm' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_TABLET'),
 			'desc'		=> JText::_('HELIX_HIDDEN_TABLET_DESC'),
 			'std'		=> '',
 			),
 		'hidden_md' 		=> array(
-			'type'		=> 'checkbox', 
+			'type'		=> 'checkbox',
 			'title'		=> JText::_('HELIX_HIDDEN_DESKTOP'),
 			'desc'		=> JText::_('HELIX_HIDDEN_DESKTOP_DESC'),
 			'std'		=> '',
 			),
 		'sm_col' 		=> array(
-			'type'		=> 'select', 
+			'type'		=> 'select',
 			'title'		=> JText::_('HELIX_TABLET_LAYOUT'),
 			'desc'		=> JText::_('HELIX_TABLET_LAYOUT_DESC'),
 			'values'	=> array(
-				'' => "", 
+				'' => "",
 				'col-sm-1' => 'col-sm-1',
 				'col-sm-2' => 'col-sm-2',
 				'col-sm-3' => 'col-sm-3',
-				'col-sm-4' => 'col-sm-4', 
-				'col-sm-5' => 'col-sm-5', 
-				'col-sm-6' => 'col-sm-6', 
-				'col-sm-7' => 'col-sm-7', 
-				'col-sm-8' => 'col-sm-8', 
+				'col-sm-4' => 'col-sm-4',
+				'col-sm-5' => 'col-sm-5',
+				'col-sm-6' => 'col-sm-6',
+				'col-sm-7' => 'col-sm-7',
+				'col-sm-8' => 'col-sm-8',
 				'col-sm-9' => 'col-sm-9',
 				'col-sm-10' => 'col-sm-10',
 				'col-sm-11' => 'col-sm-11',
@@ -201,19 +201,19 @@ $columnSettings = array(
 			'std'		=> '',
 			),
 		'xs_col' 		=> array(
-			'type'		=> 'select', 
+			'type'		=> 'select',
 			'title'		=> JText::_('HELIX_MOBILE_LAYOUT'),
 			'desc'		=> JText::_('HELIX_MOBILE_LAYOUT_DESC'),
 			'values'	=> array(
-				'' => "", 
+				'' => "",
 				'col-xs-1' => 'col-xs-1',
 				'col-xs-2' => 'col-xs-2',
 				'col-xs-3' => 'col-xs-3',
-				'col-xs-4' => 'col-xs-4', 
-				'col-xs-5' => 'col-xs-5', 
-				'col-xs-6' => 'col-xs-6', 
-				'col-xs-7' => 'col-xs-7', 
-				'col-xs-8' => 'col-xs-8', 
+				'col-xs-4' => 'col-xs-4',
+				'col-xs-5' => 'col-xs-5',
+				'col-xs-6' => 'col-xs-6',
+				'col-xs-7' => 'col-xs-7',
+				'col-xs-8' => 'col-xs-8',
 				'col-xs-9' => 'col-xs-9',
 				'col-xs-10' => 'col-xs-10',
 				'col-xs-11' => 'col-xs-11',
@@ -222,7 +222,7 @@ $columnSettings = array(
 			'std'		=> '',
 			),
 		'custom_class' => array(
-			'type'		=> 'text', 
+			'type'		=> 'text',
 			'title'		=> JText::_('HELIX_CUSTOM_CLASS'),
 			'desc'		=> JText::_('HELIX_CUSTOM_CLASS_DESC'),
 			'std'		=> ''
@@ -237,7 +237,7 @@ class RowColumnSettings{
 		return call_user_func(array( 'SpType' . ucfirst( $attr['type'] ), 'getInput'), $key, $attr );
 	}
 
-	static public function getRowSettings($row_settings = array())
+	public static function getRowSettings($row_settings = array())
 	{
 
 		$output = '<div class="hidden">';
@@ -253,7 +253,7 @@ class RowColumnSettings{
 		return $output;
 	}
 
-	static public function getColumnSettings($col_settings = array())
+	public static function getColumnSettings($col_settings = array())
 	{
 
 		$col_settings['attr']['name']['values'] = self::getPositionss();
@@ -271,7 +271,7 @@ class RowColumnSettings{
 		return $output;
 	}
 
-	static public function getTemplateName()
+	public static function getTemplateName()
 	{
 		$db = JFactory::getDbo();
 		$query = $db->getQuery(true);
@@ -285,8 +285,7 @@ class RowColumnSettings{
 	}
 
 
-	static public function getPositionss()
-	{
+	public static function getPositionss() {
 
 	    $db = JFactory::getDBO();
 	    $query = 'SELECT `position` FROM `#__modules` WHERE  `client_id`=0 AND ( `published` !=-2 AND `published` !=0 ) GROUP BY `position` ORDER BY `position` ASC';
@@ -314,9 +313,9 @@ class RowColumnSettings{
 	    return $selectOption;
 	}
 
-	static public function getSettings($config = null){
+	public static function getSettings($config = null){
 		$data = '';
-		if (count($config)) {
+		if ($config) {
 			foreach ($config as $key => $value) {
 				$data .= ' data-'.$key.'="'.$value.'"';
 			}
