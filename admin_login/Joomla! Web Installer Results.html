@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost/GitHub/joomla-itmakeup/installation/index.php# -->
+<html lang="en-us" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Joomla! Web Installer</title>
+	<link href="http://localhost/GitHub/joomla-itmakeup/installation/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link href="./Joomla! Web Installer Results_files/chosen.css" rel="stylesheet">
+	<link href="./Joomla! Web Installer Results_files/bootstrap.min.css" rel="stylesheet">
+	<link href="./Joomla! Web Installer Results_files/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="./Joomla! Web Installer Results_files/bootstrap-extended.css" rel="stylesheet">
+	<link href="./Joomla! Web Installer Results_files/template.css" rel="stylesheet">
+	<script type="application/json" class="joomla-script-options loaded">{"csrf.token":"192a6cd936c5728b536888c6812cbbb2","system.paths":{"root":"\/GitHub\/joomla-itmakeup","base":"\/GitHub\/joomla-itmakeup\/installation"},"system.keepalive":{"interval":300000,"uri":"index.php"},"joomla.jtext":{"JLIB_FORM_FIELD_INVALID":"Invalid field:&#160;","ERROR":"Error","WARNING":"Warning","NOTICE":"Notice","MESSAGE":"Message","JLIB_JS_AJAX_ERROR_CONNECTION_ABORT":"A connection abort has occurred while fetching the JSON data.","JLIB_JS_AJAX_ERROR_NO_CONTENT":"No content was returned.","JLIB_JS_AJAX_ERROR_OTHER":"An error has occurred while fetching the JSON data: HTTP %s status code.","JLIB_JS_AJAX_ERROR_PARSE":"A parse error has occurred while processing the following JSON data:<br\/><code style=\"color:inherit;white-space:pre-wrap;padding:0;margin:0;border:0;background:inherit;\">%s<\/code>","JLIB_JS_AJAX_ERROR_TIMEOUT":"A timeout has occurred while fetching the JSON data.","INSTL_PROCESS_BUSY":"Process is in progress. Please wait ...","INSTL_FTP_SETTINGS_CORRECT":"Settings correct"},"system.installation":{"url":"index.php"}}</script>
+	<script src="./Joomla! Web Installer Results_files/jquery.min.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/jquery-noconflict.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/jquery-migrate.min.js.download"></script>
+	<!--[if lt IE 9]><script src="/GitHub/joomla-itmakeup/media/system/js/html5fallback.js?27ec52dd2fef4c7b3aec9252c20064d5"></script><![endif]-->
+	<script src="./Joomla! Web Installer Results_files/bootstrap.min.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/chosen.jquery.min.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/core.js.download"></script>
+	<!--[if lt IE 9]><script src="/GitHub/joomla-itmakeup/media/system/js/polyfill.event.js?27ec52dd2fef4c7b3aec9252c20064d5"></script><![endif]-->
+	<script src="./Joomla! Web Installer Results_files/keepalive.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/punycode.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/validate.js.download"></script>
+	<script src="./Joomla! Web Installer Results_files/installation.js.download"></script>
+	<!--[if lt IE 9]><script src="/GitHub/joomla-itmakeup/media/jui/js/html5.js?27ec52dd2fef4c7b3aec9252c20064d5"></script><![endif]-->
+	<script>
+
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find("select").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"JGLOBAL_TYPE_OR_SELECT_SOME_OPTIONS","placeholder_text_single":"Select an option","no_results_text":"No results match"});
+		}
+	});
+	
+	</script>
+
+		<!--[if lt IE 9]><script src="/GitHub/joomla-itmakeup/media/jui/js/html5.js"></script><![endif]-->
+	</head>
+	<body data-basepath="/GitHub/joomla-itmakeup">
+		<!-- Header -->
+		<div class="header">
+			<img src="./Joomla! Web Installer Results_files/joomla.png" alt="Joomla">
+			<hr>
+			<h5>
+																<a href="https://www.joomla.org/" target="_blank">Joomla!</a><sup></sup> is free software released under the <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.html" target="_blank" rel="noopener noreferrer">GNU General Public License</a>.			</h5>
+		</div>
+		<!-- Container -->
+		<div class="container">
+			<div id="system-message-container" style=""></div>
+
+			<div id="javascript-warning">
+				<noscript>
+					<div class="alert alert-error">
+						Warning! JavaScript must be enabled for proper installation of Joomla!					</div>
+				</noscript>
+			</div>
+			<div id="container-installation"><form action="http://localhost/GitHub/joomla-itmakeup/installation/index.php" xmlns="http://www.w3.org/1999/html" method="post" id="adminForm" class="form-validate form-horizontal">
+	<div class="alert alert-error inlineError" id="theDefaultError" style="display: none">
+		<h4 class="alert-heading">Error</h4>
+		<p id="theDefaultErrorMessage"></p>
+	</div>
+	<div class="alert alert-success">
+		<h3>Congratulations! Joomla! is now installed.</h3>
+	</div>
+	<div id="languages" class="row-fluid">
+		<h3>Joomla! in your own language and/or automatic basic native multilingual site creation</h3>
+		<hr class="hr-condensed">
+		<div class="row-fluid">
+			<div class="span6">
+				<p>Before removing the installation folder you can install extra languages. If you want to add extra languages to your Joomla! application select the following button.</p>
+				<p><a href="http://localhost/GitHub/joomla-itmakeup/installation/index.php#" class="btn btn-primary" id="instLangs" onclick="return Install.goToPage(&#39;languages&#39;);"><span class="icon-arrow-right icon-white"></span> Extra steps: Install languages</a></p>
+			</div>
+			<div class="alert alert-info span6">
+				<p>Note: you will need internet access for Joomla! to download and install the new languages. <br>Some server configurations won't allow Joomla! to install the languages. If this is your case, don't worry, you will be able to install them later using the Joomla! Administrator.</p>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="alert">
+			<p>PLEASE REMEMBER TO COMPLETELY REMOVE THE INSTALLATION FOLDER.<br>You will not be able to proceed beyond this point until the installation folder has been removed. This is a security feature of Joomla!</p>
+			<input type="button" class="btn btn-warning" name="instDefault" onclick="Install.removeFolder(this);" value="Remove installation folder">
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="btn-toolbar span6">
+			<div class="btn-group">
+				<a class="btn" href="http://localhost/GitHub/joomla-itmakeup/" title="Site"><span class="icon-eye-open"></span> Site</a>
+			</div>
+			<div class="btn-group">
+				<a class="btn btn-primary" href="http://localhost/GitHub/joomla-itmakeup/administrator/" title="Administrator"><span class="icon-lock icon-white"></span> Administrator</a>
+			</div>
+		</div>
+		<div class="span6">
+			<h3>Administration Login Details</h3>
+			<hr class="hr-condensed">
+			<table class="table table-striped table-condensed">
+				<tbody>
+					<tr>
+						<td class="item">
+							Email						</td>
+						<td>
+							<span class="label">hantelmann.andreea@yahoo.com</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="notice">
+							Username						</td>
+						<td>
+							<span class="label">joomla</span>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+		<input type="hidden" name="4dd58a1c4224177567a8d88fbab46a39" value="1"></form>
+
+</div>
+			<hr>
+		</div>
+	
+
+<div id="loading-logo" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; overflow: hidden; z-index: 10000; display: none; background-color: rgb(255, 255, 255); background-image: url(&quot;/GitHub/joomla-itmakeup/media/jui/images/ajax-loader.gif&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: fixed;"></div><div id="loading-logo" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; overflow: hidden; z-index: 10000; display: none; background-color: rgb(255, 255, 255); background-image: url(&quot;/GitHub/joomla-itmakeup/media/jui/images/ajax-loader.gif&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: fixed;"></div><div id="loading-logo" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; overflow: hidden; z-index: 10000; display: none; background-color: rgb(255, 255, 255); background-image: url(&quot;/GitHub/joomla-itmakeup/media/jui/images/ajax-loader.gif&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: fixed;"></div><div id="loading-logo" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; overflow: hidden; z-index: 10000; display: none; background-color: rgb(255, 255, 255); background-image: url(&quot;/GitHub/joomla-itmakeup/media/jui/images/ajax-loader.gif&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: fixed;"></div><div id="loading-logo" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; overflow: hidden; z-index: 10000; display: none; background-color: rgb(255, 255, 255); background-image: url(&quot;/GitHub/joomla-itmakeup/media/jui/images/ajax-loader.gif&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: fixed;"></div></body></html>
